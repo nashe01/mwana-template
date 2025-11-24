@@ -49,11 +49,16 @@ const About = () => {
         <div className="grid md:grid-cols-2 gap-12 max-w-6xl mx-auto mb-20">
           {/* Left Column - Image Grid */}
           <div className="relative">
-            <div className="flex justify-center mb-4">
+            <div className="grid grid-cols-2 gap-4 mb-4">
               <img
                 src={aboutPerson1}
                 alt="Community member"
-                className="w-3/4 h-48 object-cover rounded-lg"
+                className="w-full h-48 object-cover rounded-lg"
+              />
+              <img
+                src={aboutTeam}
+                alt="Team collaboration"
+                className="w-full h-48 object-cover rounded-lg"
               />
             </div>
             <div className="flex justify-center">
