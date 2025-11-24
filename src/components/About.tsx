@@ -49,23 +49,24 @@ const About = () => {
         <div className="grid md:grid-cols-2 gap-12 max-w-6xl mx-auto mb-20">
           {/* Left Column - Image Grid */}
           <div className="relative">
-            <div className="grid grid-cols-2 gap-4 mb-4">
+            <div className="absolute top-4 left-4 flex gap-4 z-10">
               <img
                 src={aboutPerson1}
                 alt="Community member"
-                className="w-full h-48 object-cover rounded-lg"
+                className="w-28 h-28 object-cover rounded-lg shadow-lg"
               />
-              <img
-                src={aboutTeam}
-                alt="Team collaboration"
-                className="w-full h-48 object-cover rounded-lg"
-              />
+              
             </div>
-            <div className="flex justify-center">
+            <div className="relative flex justify-center">
               <img
                 src={aboutPerson2}
                 alt="Professional team member"
-                className="w-3/4 h-96 object-cover rounded-lg -mt-8"
+                className="w-3/4 h-96 object-cover rounded-lg"
+              />
+              <img
+                src={aboutTeam}
+                alt="Overlay bottom right"
+                className="w-28 h-28 object-cover rounded-lg shadow-lg absolute bottom-4 right-4"
               />
             </div>
           </div>
