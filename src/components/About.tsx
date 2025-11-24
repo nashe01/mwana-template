@@ -1,5 +1,8 @@
-import { Target, Eye, Award } from "lucide-react";
+import { Target, Eye, Award, Check } from "lucide-react";
 import { Card } from "@/components/ui/card";
+import aboutPerson1 from "@/assets/about-person-1.jpg";
+import aboutTeam from "@/assets/about-team.jpg";
+import aboutPerson2 from "@/assets/about-person-2.jpg";
 
 const About = () => {
   const values = [
@@ -23,6 +26,15 @@ const About = () => {
     },
   ];
 
+  const highlights = [
+    "Committed to community empowerment",
+    "Transparent, ethical operations",
+    "Sustainable & scalable solutions",
+    "Trusted by regional partners",
+    "Multi-sector expertise",
+    "Decades of combined experience",
+  ];
+
   return (
     <section className="py-24 bg-background">
       <div className="container mx-auto px-6">
@@ -31,6 +43,49 @@ const About = () => {
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
             Building the future through purpose-driven technology
           </p>
+        </div>
+
+        {/* Two-column layout with image grid and company summary */}
+        <div className="grid md:grid-cols-2 gap-12 max-w-6xl mx-auto mb-20">
+          {/* Left Column - Image Grid */}
+          <div className="relative">
+            <div className="grid grid-cols-2 gap-4 mb-4">
+              <img
+                src={aboutPerson1}
+                alt="Community member"
+                className="w-full h-48 object-cover rounded-lg"
+              />
+              <img
+                src={aboutTeam}
+                alt="Team collaboration"
+                className="w-full h-48 object-cover rounded-lg"
+              />
+            </div>
+            <div className="flex justify-center">
+              <img
+                src={aboutPerson2}
+                alt="Professional team member"
+                className="w-3/4 h-96 object-cover rounded-lg -mt-8"
+              />
+            </div>
+          </div>
+
+          {/* Right Column - Company Summary */}
+          <div className="flex flex-col justify-center">
+            <p className="text-lg text-foreground leading-relaxed mb-8">
+              MwanaWev is a purpose-driven organization dedicated to building sustainable solutions for communities across Africa. With decades of combined experience, we connect innovation, environmental care, and community impact to create lasting value. Our work spans multiple sectors — all unified by a mission to empower people, protect nature, and shape a better future.
+            </p>
+            <div className="space-y-4">
+              {highlights.map((highlight, index) => (
+                <div key={index} className="flex items-start gap-3">
+                  <div className="mt-1 flex-shrink-0">
+                    <Check className="h-5 w-5 text-primary" />
+                  </div>
+                  <span className="text-foreground">{highlight}</span>
+                </div>
+              ))}
+            </div>
+          </div>
         </div>
 
         <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
