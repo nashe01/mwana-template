@@ -33,8 +33,9 @@ const Footer = () => {
         <div className="grid md:grid-cols-4 gap-12 mb-12">
           {/* Brand */}
           <div>
-            <a href="#home" className="inline-flex items-center mb-4" aria-label="MwanaWev home">
-              <img src={logo} alt="MwanaWev" className="h-8 w-auto" />
+            <a href="#home" className="inline-flex items-center gap-3 mb-4" aria-label="MwanaWev home">
+              <img src={logo} alt="" className="h-10 w-auto" />
+              <span className="sr-only">MwanaWev</span>
             </a>
             <p className="text-primary-foreground/80 leading-relaxed">
               Technology for meaningful impact and sustainable change.
