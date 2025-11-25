@@ -34,7 +34,7 @@ const Footer = () => {
           {/* Brand */}
           <div>
             <a href="#home" className="inline-flex items-center mb-4" aria-label="MwanaWev home">
-              <img src={logo} alt="MwanaWev" className="h-8 w-auto" />
+              <img src={logo} alt="MwanaWev" className="h-12 w-auto" />
             </a>
             <p className="text-primary-foreground/80 leading-relaxed">
               Technology for meaningful impact and sustainable change.
