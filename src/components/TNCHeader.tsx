@@ -18,7 +18,7 @@ const TNCHeader = () => {
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
           <a href="#home" className="inline-flex items-center" aria-label="MwanaWev home">
-            <img src={logo} alt="MwanaWev" className="h-8 w-auto" />
+            <img src={logo} alt="MwanaWev" className="h-12 w-auto" />
           </a>
           <nav className="hidden md:flex gap-6">
             <a href="#about" className="hover:text-primary transition-colors">About</a>
