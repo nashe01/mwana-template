@@ -25,11 +25,11 @@ const Impact = () => {
   ];
 
   return (
-    <section className="py-24 bg-primary text-primary-foreground">
+    <section className="py-24 bg-background">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-4">Our Impact</h2>
-          <p className="text-xl text-primary-foreground/80 max-w-2xl mx-auto">
+          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
             Measuring what matters: lives transformed, communities empowered
           </p>
         </div>
@@ -38,14 +38,14 @@ const Impact = () => {
           {metrics.map((metric, index) => (
             <div key={index} className="text-center">
               <div className="mb-4 flex justify-center">
-                <div className="w-16 h-16 rounded-full bg-primary-foreground/10 flex items-center justify-center">
-                  <metric.icon className="h-8 w-8" />
+                <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center">
+                  <metric.icon className="h-8 w-8 text-primary" />
                 </div>
               </div>
-              <div className="text-4xl md:text-5xl font-bold mb-2">
+              <div className="text-4xl md:text-5xl font-bold mb-2 text-foreground">
                 {metric.value}
               </div>
-              <div className="text-primary-foreground/80 font-medium">
+              <div className="text-muted-foreground font-medium">
                 {metric.label}
               </div>
             </div>
