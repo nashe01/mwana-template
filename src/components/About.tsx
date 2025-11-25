@@ -59,7 +59,7 @@ const About = () => {
               <img
                 src={aboutPerson2}
                 alt="Professional team member"
-                className="w-[90%] h-96 object-cover rounded-lg"
+                className="w-[60%] h-96 object-cover rounded-lg"
               />
               <img
                 src={aboutTeam}
