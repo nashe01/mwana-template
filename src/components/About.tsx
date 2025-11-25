@@ -47,24 +47,33 @@ const About = () => {
         <div className="grid md:grid-cols-2 gap-12 max-w-6xl mx-auto mb-20">
           {/* Left Column - Image Grid */}
           <div className="relative">
-            <div className="absolute top-4 left-4 flex gap-4 z-10">
-              <img
-                src={aboutPerson1}
-                alt="Community member"
-                className="w-28 h-28 object-cover rounded-lg shadow-lg"
-              />
-              
-            </div>
+            {/* Top-left small image */}
+            <img
+              src={aboutPerson1}
+              alt="Community member"
+              className="w-28 h-28 object-cover rounded-lg shadow-lg absolute top-4 left-4 z-10"
+            />
+
+            {/* Middle-left small image (moved from right side) */}
+            <img
+              src={aboutTeam}
+              alt="Middle left"
+              className="w-28 h-28 object-cover rounded-lg shadow-lg absolute top-1/2 -translate-y-1/2 left-4 z-10"
+            />
+
+            {/* Bottom-left small image */}
+            <img
+              src={aboutPerson1}
+              alt="Overlay bottom left"
+              className="w-28 h-28 object-cover rounded-lg shadow-lg absolute bottom-4 left-4 z-10"
+            />
+
+            {/* Main large image */}
             <div className="relative flex justify-center">
               <img
                 src={aboutPerson2}
                 alt="Professional team member"
                 className="w-[60%] h-96 object-cover rounded-lg"
-              />
-              <img
-                src={aboutTeam}
-                alt="Overlay bottom right"
-                className="w-28 h-28 object-cover rounded-lg shadow-lg absolute bottom-4 right-4"
               />
             </div>
           </div>
@@ -72,8 +81,14 @@ const About = () => {
           {/* Right Column - Company Summary */}
           <div className="flex flex-col justify-center">
             <p className="text-lg text-foreground leading-relaxed mb-8">
-              MwanaWev is a purpose-driven organization dedicated to building sustainable solutions for communities across Africa. With decades of combined experience, we connect innovation, environmental care, and community impact to create lasting value. Our work spans multiple sectors — all unified by a mission to empower people, protect nature, and shape a better future.
+              MwanaWev is a purpose-driven organization dedicated to building
+              sustainable solutions for communities across Africa. With decades
+              of combined experience, we connect innovation, environmental care,
+              and community impact to create lasting value. Our work spans
+              multiple sectors — all unified by a mission to empower people,
+              protect nature, and shape a better future.
             </p>
+
             <div className="space-y-4">
               {highlights.map((highlight, index) => (
                 <div key={index} className="flex items-start gap-3">
@@ -87,6 +102,7 @@ const About = () => {
           </div>
         </div>
 
+        {/* Values Section */}
         <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
           {values.map((value, index) => (
             <Card
