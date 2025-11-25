@@ -23,7 +23,7 @@ const Newsletter = () => {
   ];
 
   return (
-    <section className="py-24 bg-background">
+    <section id="newsletter" className="py-24 bg-background">
       <div className="container mx-auto px-6">
         {/* Newsletter Subscription */}
         <div className="max-w-4xl mx-auto mb-20">

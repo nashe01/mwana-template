@@ -8,18 +8,21 @@ import skySegment from "@/assets/sky-segment.jpg";
 const CoreSegments = () => {
   const segments = [
     {
+      id: "segment-tech",
       title: "MwanaWev Tech",
       description:
         "Innovative technology solutions that transform how communities access and utilize digital tools for growth and development.",
       image: techSegment,
     },
     {
+      id: "segment-paywega",
       title: "PayWega",
       description:
         "Financial technology platform enabling seamless, secure transactions and empowering economic participation across all communities.",
       image: paymentSegment,
     },
     {
+      id: "segment-skygiants",
       title: "SkyGiants",
       description:
         "Elevating possibilities through advanced systems and infrastructure that connect, protect, and serve communities at scale.",
@@ -28,7 +31,7 @@ const CoreSegments = () => {
   ];
 
   return (
-    <section className="py-24 bg-muted">
+    <section id="segments" className="py-24 bg-muted">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-4">Core Segments</h2>
@@ -38,9 +41,10 @@ const CoreSegments = () => {
         </div>
 
         <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-          {segments.map((segment, index) => (
+          {segments.map((segment) => (
             <Card
-              key={index}
+              key={segment.id}
+              id={segment.id}
               className="overflow-hidden bg-card hover:shadow-xl transition-all duration-300 group border-border"
             >
               <div className="aspect-square overflow-hidden">

@@ -8,14 +8,14 @@ const Footer = () => {
       { label: "Contact", href: "#contact" },
     ],
     segments: [
-      { label: "MwanaWev Tech", href: "#tech" },
-      { label: "PayWega", href: "#paywega" },
-      { label: "SkyGiants", href: "#skygiants" },
+      { label: "MwanaWev Tech", href: "#segment-tech" },
+      { label: "PayWega", href: "#segment-paywega" },
+      { label: "SkyGiants", href: "#segment-skygiants" },
     ],
     resources: [
-      { label: "Blog", href: "#blog" },
+      { label: "Blog", href: "#newsletter" },
       { label: "Impact Reports", href: "#impact" },
-      { label: "Privacy Policy", href: "#privacy" },
+      { label: "Privacy Policy", href: "#contact" },
     ],
   };
 
@@ -27,7 +27,7 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="bg-primary text-primary-foreground border-t border-primary-foreground/20 py-16">
+    <footer id="contact" className="bg-primary text-primary-foreground border-t border-primary-foreground/20 py-16">
       <div className="container mx-auto px-6">
         <div className="grid md:grid-cols-4 gap-12 mb-12">
           {/* Brand */}
