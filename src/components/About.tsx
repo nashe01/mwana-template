@@ -31,8 +31,6 @@ const About = () => {
     "Transparent, ethical operations",
     "Sustainable & scalable solutions",
     "Trusted by regional partners",
-    "Multi-sector expertise",
-    "Decades of combined experience",
   ];
 
   return (
@@ -61,7 +59,7 @@ const About = () => {
               <img
                 src={aboutPerson2}
                 alt="Professional team member"
-                className="w-3/4 h-96 object-cover rounded-lg"
+                className="w-[90%] h-96 object-cover rounded-lg"
               />
               <img
                 src={aboutTeam}
