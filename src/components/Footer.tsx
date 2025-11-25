@@ -1,5 +1,4 @@
 import { Linkedin, Twitter, Github, Mail } from "lucide-react";
-import logo from "@/assets/asset55.png";
 
 const Footer = () => {
   const links = {
@@ -33,10 +32,7 @@ const Footer = () => {
         <div className="grid md:grid-cols-4 gap-12 mb-12">
           {/* Brand */}
           <div>
-            <a href="#home" className="inline-flex items-center gap-3 mb-4" aria-label="MwanaWev home">
-              <img src={logo} alt="" className="h-10 w-auto" />
-              <span className="sr-only">MwanaWev</span>
-            </a>
+            <h3 className="text-2xl font-bold mb-4">MwanaWev</h3>
             <p className="text-primary-foreground/80 leading-relaxed">
               Technology for meaningful impact and sustainable change.
             </p>

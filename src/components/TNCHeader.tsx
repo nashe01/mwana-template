@@ -1,5 +1,3 @@
-import logo from "@/assets/asset55.png";
-
 const TNCHeader = () => {
   // TODO: Replace this with your actual geolocation JSON string
   // Paste the exact geolocation JSON data here as a string
@@ -17,10 +15,7 @@ const TNCHeader = () => {
       </div>
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
-          <a href="#home" className="inline-flex items-center gap-3" aria-label="MwanaWev home">
-            <img src={logo} alt="" className="h-10 w-auto" />
-            <span className="sr-only">MwanaWev</span>
-          </a>
+          <div className="text-xl font-bold">MwanaWev</div>
           <nav className="hidden md:flex gap-6">
             <a href="#about" className="hover:text-primary transition-colors">About</a>
             <a href="#segments" className="hover:text-primary transition-colors">Segments</a>
