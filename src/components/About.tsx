@@ -3,7 +3,7 @@ import { Card } from "@/components/ui/card";
 import aboutPerson1 from "@/assets/about-person-1.jpg";
 import aboutTeam from "@/assets/about-team.jpg";
 import aboutPerson2 from "@/assets/about-person-2.jpg";
-
+import aboutPerson3 from "@/assets/about-person-3.jpg";
 const About = () => {
   const values = [
     {
@@ -63,7 +63,7 @@ const About = () => {
 
             {/* Bottom-left small image */}
             <img
-              src={aboutPerson1}
+              src={aboutPerson3}
               alt="Overlay bottom left"
               className="w-28 h-28 object-cover rounded-lg shadow-lg absolute bottom-4 left-4 z-10"
             />
@@ -73,7 +73,7 @@ const About = () => {
               <img
                 src={aboutPerson2}
                 alt="Professional team member"
-                className="w-[60%] h-96 object-cover rounded-lg"
+                className="w-[50%] h-96 object-cover rounded-lg"
               />
             </div>
           </div>

@@ -5,7 +5,8 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
-import { ChevronDown } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { Menu } from "lucide-react";
 
 const TNCHeader = () => {
   // TODO: Replace this with your actual geolocation JSON string
@@ -35,25 +36,27 @@ const TNCHeader = () => {
           </a>
           <nav className="hidden md:flex gap-6 items-center justify-center flex-1">
             <a href="#about" className="hover:text-primary transition-colors">About</a>
-            <DropdownMenu>
-              <DropdownMenuTrigger className="flex items-center gap-1 hover:text-primary transition-colors focus:outline-none">
-                Company Segments
-                <ChevronDown className="h-4 w-4" />
-              </DropdownMenuTrigger>
-              <DropdownMenuContent align="center">
-                {segments.map((segment, index) => (
-                  <DropdownMenuItem key={index} asChild>
-                    <a href={segment.href} className="cursor-pointer">
-                      {segment.label}
-                    </a>
-                  </DropdownMenuItem>
-                ))}
-              </DropdownMenuContent>
-            </DropdownMenu>
+            <a href="#careers" className="hover:text-primary transition-colors">Careers</a>
             <a href="#impact" className="hover:text-primary transition-colors">Impact</a>
             <a href="#contact" className="hover:text-primary transition-colors">Contact</a>
           </nav>
-          <div className="w-[88px]"></div>
+          <DropdownMenu>
+            <DropdownMenuTrigger asChild>
+              <Button variant="outline" className="flex items-center gap-2">
+                <Menu className="h-4 w-4" />
+                Company Segments
+              </Button>
+            </DropdownMenuTrigger>
+            <DropdownMenuContent align="end">
+              {segments.map((segment, index) => (
+                <DropdownMenuItem key={index} asChild>
+                  <a href={segment.href} className="cursor-pointer">
+                    {segment.label}
+                  </a>
+                </DropdownMenuItem>
+              ))}
+            </DropdownMenuContent>
+          </DropdownMenu>
         </div>
       </div>
     </header>

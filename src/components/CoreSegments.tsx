@@ -1,9 +1,9 @@
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
-import techSegment from "@/assets/tech-segment.jpg";
-import paymentSegment from "@/assets/payment-segment.jpg";
-import skySegment from "@/assets/sky-segment.jpg";
+import techSegment from "@/assets/Mwanawev.jpg";
+import paymentSegment from "@/assets/paywega.jpg";
+import skySegment from "@/assets/sky-giants.jpeg";
 
 const CoreSegments = () => {
   const segments = [
@@ -51,7 +51,7 @@ const CoreSegments = () => {
                 <img
                   src={segment.image}
                   alt={segment.title}
-                  className="w-full h-full object-cover grayscale group-hover:scale-105 transition-transform duration-500"
+                  className="w-full h-full object-cover  group-hover:scale-105 transition-transform duration-500"
                 />
               </div>
               <div className="p-8">
