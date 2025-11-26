@@ -78,6 +78,7 @@ const TNCHeader = () => {
           {/* NAV */}
           <nav className="hidden md:flex gap-6 items-center justify-center flex-1">
             <a href="#about" className="hover:text-primary transition-colors">About</a>
+            <a href="#newsletter" className="hover:text-primary transition-colors">Newsletter</a>
             <a href="#careers" className="hover:text-primary transition-colors">Careers</a>
             <a href="#impact" className="hover:text-primary transition-colors">Impact</a>
             <a href="#contact" className="hover:text-primary transition-colors">Contact</a>
