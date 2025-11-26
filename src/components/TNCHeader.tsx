@@ -18,12 +18,12 @@ const TNCHeader = () => {
     const handleScroll = () => {
       const currentScroll = window.scrollY;
 
-      // If scrolling DOWN → shrink
+      // Scrolling DOWN → shrink header
       if (currentScroll > lastScrollY && currentScroll > 50) {
         setShrink(true);
       }
 
-      // If scrolling UP → expand
+      // Scrolling UP → expand header
       if (currentScroll < lastScrollY) {
         setShrink(false);
       }
@@ -64,7 +64,7 @@ const TNCHeader = () => {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between transition-all duration-300">
 
-          {/* LOGO */}
+          {/* LOGO SHRINKS */}
           <a href="#home" className="inline-flex items-center" aria-label="MwanaWev home">
             <img
               src={logo}
@@ -75,8 +75,18 @@ const TNCHeader = () => {
             />
           </a>
 
-          {/* NAV */}
-          <nav className="hidden md:flex gap-6 items-center justify-center flex-1">
+          {/* NAV LINKS */}
+          <nav
+            className={`
+              hidden md:flex gap-6 items-center justify-center flex-1 
+              transition-all duration-300
+              ${
+                shrink
+                  ? "opacity-0 pointer-events-none translate-y-[-10px]"
+                  : "opacity-100 translate-y-0"
+              }
+            `}
+          >
             <a href="#about" className="hover:text-primary transition-colors">About</a>
             <a href="#newsletter" className="hover:text-primary transition-colors">Newsletter</a>
             <a href="#careers" className="hover:text-primary transition-colors">Careers</a>
@@ -104,7 +114,9 @@ const TNCHeader = () => {
                 </DropdownMenuItem>
               ))}
             </DropdownMenuContent>
+
           </DropdownMenu>
+
         </div>
       </div>
     </header>
@@ -112,4 +124,5 @@ const TNCHeader = () => {
 };
 
 export default TNCHeader;
+
 
