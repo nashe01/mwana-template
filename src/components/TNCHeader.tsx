@@ -69,30 +69,29 @@ const TNCHeader = () => {
             <img
               src={logo}
               alt="MwanaWev"
-              className={`transition-all duration-300 ${
-                shrink ? "h-8" : "h-11"
-              } w-auto`}
+              className={`transition-all duration-300 ${shrink ? "h-8" : "h-11"} w-auto`}
             />
           </a>
 
           {/* NAV LINKS */}
-          <nav
-            className={`
-              hidden md:flex gap-6 items-center justify-center flex-1 
-              transition-all duration-300
-              ${
-                shrink
-                  ? "opacity-0 pointer-events-none translate-y-[-10px]"
-                  : "opacity-100 translate-y-0"
-              }
-            `}
-          >
-            <a href="#about" className="hover:text-primary transition-colors">About</a>
-            <a href="#newsletter" className="hover:text-primary transition-colors">Newsletter</a>
-            <a href="#careers" className="hover:text-primary transition-colors">Careers</a>
-            <a href="#impact" className="hover:text-primary transition-colors">Impact</a>
-            <a href="#contact" className="hover:text-primary transition-colors">Contact</a>
-          </nav>
+<nav
+  className={`
+    hidden md:flex gap-6 items-center justify-center flex-1 
+    transition-all duration-300
+    ${
+      shrink
+        ? "opacity-0 pointer-events-none translate-y-[-10px]"
+        : "opacity-100 translate-y-0"
+    }
+  `}
+>
+  <a href="#about" className="text-[#F37535] font-bold hover:text-[#F37535] transition-colors">About</a>
+  <a href="#newsletter" className="text-[#F37535] font-bold hover:text-[#F37535] transition-colors">Newsletter</a>
+  <a href="#careers" className="text-[#F37535] font-bold hover:text-[#F37535] transition-colors">Careers</a>
+  <a href="#impact" className="text-[#F37535] font-bold hover:text-[#F37535] transition-colors">Impact</a>
+  <a href="#contact" className="text-[#F37535] font-bold hover:text-[#F37535] transition-colors">Contact</a>
+</nav>
+
 
           {/* DROPDOWN */}
           <DropdownMenu>
@@ -124,5 +123,3 @@ const TNCHeader = () => {
 };
 
 export default TNCHeader;
-
-
