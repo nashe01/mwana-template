@@ -4,6 +4,7 @@ import aboutPerson1 from "@/assets/about-person-1.jpg";
 import aboutTeam from "@/assets/about-team.jpg";
 import aboutPerson2 from "@/assets/about-person-2.jpg";
 import aboutPerson3 from "@/assets/about-person-3.jpg";
+
 const About = () => {
   const values = [
     {
@@ -37,38 +38,33 @@ const About = () => {
     <section id="about" className="py-24 bg-background">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4">Who We Are</h2>
+          <h2 className="text-4xl md:text-5xl font-bold mb-4 text-[#F37535]">
+            Who We Are
+          </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
             Building the future through purpose-driven technology
           </p>
         </div>
 
-        {/* Two-column layout with image grid and company summary */}
+        {/* Two-column layout */}
         <div className="grid md:grid-cols-2 gap-12 max-w-6xl mx-auto mb-20">
-          {/* Left Column - Image Grid */}
           <div className="relative">
-            {/* Top-left small image */}
             <img
               src={aboutPerson1}
               alt="Community member"
               className="w-28 h-28 object-cover rounded-lg shadow-lg absolute top-4 left-4 z-10"
             />
-
-            {/* Middle-left small image (moved from right side) */}
             <img
               src={aboutTeam}
               alt="Middle left"
               className="w-28 h-28 object-cover rounded-lg shadow-lg absolute top-1/2 -translate-y-1/2 left-4 z-10"
             />
-
-            {/* Bottom-left small image */}
             <img
               src={aboutPerson3}
               alt="Overlay bottom left"
               className="w-28 h-28 object-cover rounded-lg shadow-lg absolute bottom-4 left-4 z-10"
             />
 
-            {/* Main large image */}
             <div className="relative flex justify-center">
               <img
                 src={aboutPerson2}
@@ -78,7 +74,6 @@ const About = () => {
             </div>
           </div>
 
-          {/* Right Column - Company Summary */}
           <div className="flex flex-col justify-center">
             <p className="text-lg text-foreground leading-relaxed mb-8">
               MwanaWev is a purpose-driven organization dedicated to building
@@ -114,7 +109,11 @@ const About = () => {
                   <value.icon className="h-8 w-8 text-primary-foreground" />
                 </div>
               </div>
-              <h3 className="text-2xl font-bold mb-4">{value.title}</h3>
+
+              <h3 className="text-2xl font-bold mb-4 text-[#F37535]">
+                {value.title}
+              </h3>
+
               <p className="text-muted-foreground leading-relaxed">
                 {value.description}
               </p>
@@ -127,3 +126,4 @@ const About = () => {
 };
 
 export default About;
+
