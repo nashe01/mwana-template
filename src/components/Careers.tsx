@@ -3,17 +3,18 @@ import heroImg from "@/assets/careers-hero.jpeg"; // Replace with your actual im
 
 const CareersHero = () => {
   return (
-    <section className="w-full bg-gray-100 py-20"> {/* Light Gray BG */}
+    <section className="w-full bg-gray-100 py-20">
 
       {/* NEW TITLE */}
-      <div className="text-center mb-16">
-      <h2 className="text-4xl md:text-5xl font-bold mb-4">Join Our Team</h2>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Build your career while building a better future
-          </p>
+      <div className="text-center mb-16 px-6">
+        <h2 className="text-4xl md:text-5xl font-bold mb-4">Join Our Team</h2>
+        <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+          Build your career while building a better future
+        </p>
       </div>
 
-      <div className="container mx-auto px-6 grid lg:grid-cols-2 gap-10 items-center">
+      {/* CONTAINER → Reduced width */}
+      <div className="mx-auto px-6 max-w-6xl grid lg:grid-cols-2 gap-10 items-center">
         
         {/* LEFT TEXT CONTENT */}
         <div className="space-y-6">
@@ -34,7 +35,6 @@ const CareersHero = () => {
             we’d love to have you join our team.
           </p>
 
-          {/* BUTTON → Goes to Job Search Page */}
           <Button
             size="lg"
             className="bg-[#0C8A3E] hover:bg-[#0C8A3E]/90 text-white rounded-full px-8 py-6 text-lg"
@@ -58,3 +58,4 @@ const CareersHero = () => {
 };
 
 export default CareersHero;
+

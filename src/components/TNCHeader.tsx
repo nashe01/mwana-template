@@ -86,7 +86,7 @@ const TNCHeader = () => {
   `}
 >
   <a href="#about" className="text-[#F37535] font-bold hover:text-[#F37535] transition-colors">About</a>
-  <a href="#newsletter" className="text-[#F37535] font-bold hover:text-[#F37535] transition-colors">Newsletter</a>
+  <a href="#newsletter" className="text-[#F37535] font-bold hover:text-[#F37535] transition-colors">Connect With Us</a>
   <a href="#careers" className="text-[#F37535] font-bold hover:text-[#F37535] transition-colors">Careers</a>
   <a href="#impact" className="text-[#F37535] font-bold hover:text-[#F37535] transition-colors">Impact</a>
   <a href="#contact" className="text-[#F37535] font-bold hover:text-[#F37535] transition-colors">Contact</a>
