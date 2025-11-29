@@ -7,9 +7,10 @@ const CareersHero = () => {
 
       {/* NEW TITLE */}
       <div className="text-center mb-16">
-        <h2 className="text-4xl md:text-5xl font-bold text-[#F37535]">
-          Join Our Team
-        </h2>
+      <h2 className="text-4xl md:text-5xl font-bold mb-4">Join Our Team</h2>
+          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+            Build your career while building a better future
+          </p>
       </div>
 
       <div className="container mx-auto px-6 grid lg:grid-cols-2 gap-10 items-center">
