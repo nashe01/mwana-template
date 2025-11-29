@@ -3,7 +3,7 @@ import heroImg from "@/assets/careers-hero.jpeg"; // Replace with your actual im
 
 const CareersHero = () => {
   return (
-    <section className="w-full bg-white py-20">
+    <section className="w-full bg-gray-100 py-20"> {/* Light Gray BG */}
 
       {/* NEW TITLE */}
       <div className="text-center mb-16">
